@@ -103,7 +103,7 @@
 		<sf:deploy username="${sf1.username}" password="${sf1.password}" sessionId="${sf.sessionId}" serverurl="${sf.serverurl}" maxPoll="${sf.maxPoll}" deployRoot="codepkg" testLevel="RunSpecifiedTests" rollbackOnError="true">
 	
 
-<!-- <runTest>HelloWorldTest</runTest> -->
+<runTest>HelloWorldTest</runTest>
 
 		</sf:deploy>
 	</target>
