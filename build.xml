@@ -36,5 +36,12 @@
 	<arg value="codepkg/" />
 	</exec>
 	</target>
+<target name="git-commit">
+	<exec executable="git">
+	<arg value="commit" />
+	<arg value="-m" />
+	<arg value="auto commit" />
+	</exec>
+</target>
  </project>
  
