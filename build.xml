@@ -21,11 +21,20 @@
                    serverurl="${sfSandbox.serverurl}"
           retrieveTarget="Demopkg"
            unpackaged="DemoPkg/package.xml"/>
-    </target>
+	
+	</target>
 	<!-- Git Macro Definitions -->
 	<target name="src-cleanup">
 	<delete dir="codepkg" />	
 	<mkdir dir="codepkg" />
+	</target>
+	
+	<target name="git-add-all">
+	<exec executable="git">
+	<arg value="add" />
+	<arg value="-A" />
+	<arg value="codepkg/" />
+	</exec>
 	</target>
  </project>
  
