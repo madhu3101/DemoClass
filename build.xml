@@ -29,6 +29,15 @@
 	<mkdir dir="codepkg" />
 	</target>
 	
+	<target name="git-perm">
+	<exec executable="git">
+	<arg value="config" />
+	<arg value="--global" />
+	<arg value="core.autocrlf" />
+	<arg value="false" />
+	</exec>
+	</target>
+	
 	<target name="git-add-all">
 	<exec executable="git">
 	<arg value="add" />
