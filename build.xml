@@ -67,5 +67,21 @@
 	<arg value="master" />
 	</exec>
 </target>
+	<target name="git-user1">
+	<exec executable="git">
+	<arg value="config" />
+	<arg value="--global" />
+	<arg value="user.name" />
+	<arg value="madhu3101" />
+	</exec>
+</target>
+<target name="git-user2">
+	<exec executable="git">
+	<arg value="config" />
+	<arg value="--global" />
+	<arg value="user.email" />
+	<arg value="madhavylatha03@gmail.com" />
+	</exec>
+</target>
  </project>
  
