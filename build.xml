@@ -52,11 +52,19 @@
 	<arg value="auto commit" />
 	</exec>
 </target>
+<target name="git-push1">
+	<exec executable="git">
+	<arg value="remote" />
+	<arg value="add" />
+	<arg value="origin" />
+	<arg value="https://github.com/madhu3101/DemoClass" />
+	</exec>
+</target>
 	<target name="git-push">
 	<exec executable="git">
 	<arg value="push" />
-	<arg value="-u" />
-	<arg value="origin/master" />
+	<arg value="origin" />
+	<arg value="master" />
 	</exec>
 </target>
  </project>
